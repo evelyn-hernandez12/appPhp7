@@ -1,0 +1,62 @@
+#descripcion{
+    grid-area: b1;
+    background-color: ##f3c86d;
+    color: black;
+    border-radius: 5px;
+}
+#datos{
+    grid-area: b2;
+    background-color: #f36ddb;
+    border-radius: 5px;
+}
+#formulas{
+    grid-area: b3;
+    background-color: #f36d98;
+    border-radius: 5px;
+}
+#solucion{
+    grid-area: b4;
+    background-color: #dbf36d;
+    color: black;
+    border-radius: 5px;
+}
+#resultado{
+    grid-area: b5;
+    background-color: #98f36d;
+    color: black;
+    border-radius: 5px;
+}
+#contenedor{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "a a a a "
+                         "b b b b"
+                         "b b b b"
+                         "b b b b"
+                         "c c c c";
+    width: 100%;
+    height: 100%;
+}
+
+.gridProblema{
+    grid-area: b;
+}
+#gridHeader{
+    grid-area: a;
+    width: 100%;
+    height: 200px;
+}
+#gridPie{
+    grid-area: c;
+}
+#problema{
+    display: grid;
+    grid-template-columns:  repeat(4, [col] 1fr) ;
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b1 b1 b1"
+                         "b2 b2 b3 b3"
+                         "b4 b4 b5 b5";
+    width: 100%;
+    height: 100%;
+}
